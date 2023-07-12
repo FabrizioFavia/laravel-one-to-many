@@ -14,7 +14,7 @@
                             <div>
                                 <img class="projImg" src="{{ $project->image }}" alt="">
                                 <p class="mb-3">{{ $project->description }}</p>
-                                <p>{{}}</p>
+                                <p>{{$project->type->type}}</p>
                             </div>
                             <div><a class="btn btn-primary" href="{{ route('admin.projects.show', $project) }}">Scopri di
                                     più</a></div>
